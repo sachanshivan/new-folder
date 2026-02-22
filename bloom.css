@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background: black;
+    color: white;
+    padding: 15px 0;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 32px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: orange;
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: 60px auto;
+    background-color: #f3f0f0;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    margin-bottom: 15px;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    background: orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-image {
+    width: 45%;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+/* ================= SERVICES ================= */
+
+.services {
+    width: 85%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.services h1 {
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.service-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.service-box {
+    background: black;
+    color: white;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+}
+
+.service-box img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.service-box h2 {
+    margin-bottom: 10px;
+}
+
+.service-box button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* ================= INFO SECTION ================= */
+
+.info-section {
+    background: black;
+    color: white;
+    padding: 60px 0;
+}
+
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.latest-posts,
+.about,
+.social {
+    width: 25%;
+}
+
+.post {
+    margin-bottom: 20px;
+}
+
+.post h2 {
+    background: white;
+    color: black;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.social-item img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 992px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content,
+    .hero-image {
+        width: 100%;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+
+    .service-box {
+        width: 100%;
+    }
+
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .latest-posts,
+    .about,
+    .social {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
